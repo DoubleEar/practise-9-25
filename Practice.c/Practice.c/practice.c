@@ -74,19 +74,19 @@
 //	 }
 
 //求Sn=a+aa+aaa+aaaa+aaaaa的前5项之和，其中a是一个数字
-int main()
-{
-	int i;
-	int sum = 0;
-	int ret = 0;
-	int j = 0;
-	printf("请输入一个数字\n");
-	scanf("%d", &i);
-	for (j = 0; j <5; j++)
-	{
-		ret = i + 10 * ret;
-		sum = sum + ret;
-	}
-	printf("sum=%d\n", sum);
-	return 0;
-}
+//int main()
+//{
+//	int i;
+//	int sum = 0;
+//	int ret = 0;
+//	int j = 0;
+//	printf("请输入一个数字\n");
+//	scanf("%d", &i);
+//	for (j = 0; j <5; j++)
+//	{
+//		ret = i + 10 * ret;
+//		sum = sum + ret;
+//	}
+//	printf("sum=%d\n", sum);
+//	return 0;
+//}
