@@ -1,5 +1,5 @@
 #define  _CRT_SECURE_NO_WARNINGS 1
-//////编写程序数一下1到100的所有整数中出现多少次数字9
+//编写程序数一下1到100的所有整数中出现多少次数字9
 #include<stdio.h>
 //int main()
 //{
@@ -21,7 +21,7 @@
 //}
 
 //在荧幕上输出一个用*组成的菱形(下半部分）
-#include<string.h>
+//#include<string.h>
 //int main()
 //{
 //	char arr1[] = "**************************";
@@ -41,47 +41,47 @@
 //	return 0;
 //}
 //在荧幕上输出一个用*组成的菱形
-int main()
-{
-	int line = 0;
-	scanf("%d", &line);
-	//上半部分
-	int i = 0;
-	for (i = 0; i < line; i++)
-	{
-		//打印一行
-		//打印空格
-		int j = 0;
-		for (j = 0; j < line - 1 - i; j++)
-		{
-			printf(" ");
-		}
-		//打印*
-		for (j = 0; j < 2 * i + 1; j++)
-		{
-			printf("*");
-		}
-		printf("\n");
-	}
-	//下半部分
-	for (i = 0; i <line - 1; i++)
-	{
-		//打印一行
-		int j = 0;
-		//打印空格
-		for (j = 0; j < i + 1; j++)
-		{
-			printf(" ");
-		}
-		//打印*
-		for (j = 0; j < 2 * (line - 1 - i) - 1; j++)
-		{
-			printf("*");
-		}
-		printf("\n");
-	}
-	return 0;
-}
+//int main()
+//{
+//	int line = 0;
+//	scanf("%d", &line);
+//	//上半部分
+//	int i = 0;
+//	for (i = 0; i < line; i++)
+//	{
+//		//打印一行
+//		//打印空格
+//		int j = 0;
+//		for (j = 0; j < line - 1 - i; j++)
+//		{
+//			printf(" ");
+//		}
+//		//打印*
+//		for (j = 0; j < 2 * i + 1; j++)
+//		{
+//			printf("*");
+//		}
+//		printf("\n");
+//	}
+//	//下半部分
+//	for (i = 0; i <line - 1; i++)
+//	{
+//		//打印一行
+//		int j = 0;
+//		//打印空格
+//		for (j = 0; j < i + 1; j++)
+//		{
+//			printf(" ");
+//		}
+//		//打印*
+//		for (j = 0; j < 2 * (line - 1 - i) - 1; j++)
+//		{
+//			printf("*");
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
 
 //求出0～999之间的所有“水仙花数”并输出
 //int main()
@@ -107,6 +107,37 @@ int main()
 //	
 //	         return 0;
 //	 }
+
+//求出1000000以内的水仙花数并输出。
+#include<math.h> 
+int main()
+{
+	//1.判断i的位数n
+	int i = 0;
+	int sum = 0;
+	for (i = 0; i <= 1000000; i++)
+	{
+		int tmp = i;
+		while (tmp)
+		{
+			n++;
+			tmp /= 10;
+		}
+	//2.求出每个位数的n次方之和
+		while (tmp)
+		{
+			sum += pow(tmp%10, n);
+			tmp /= 10;
+
+		}
+	//3.判断
+		if (sum == i)
+		{
+			printf("%d\n", i);
+		}
+    }
+	return 0;
+}
 
 //求Sn=a+aa+aaa+aaaa+aaaaa的前5项之和，其中a是一个数字
 //int main()
