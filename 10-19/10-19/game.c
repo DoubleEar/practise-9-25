@@ -5,9 +5,9 @@ void InitBoard(char arr[ROWS][COLS], int rows, int cols, char set)
 {
 	int i = 0;
 	int j = 0;
-	for (i = 1; i <= rows; i++)
+	for (i = 0; i < rows; i++)
 	{
-		for (j = 1; j <= cols; j++)
+		for (j = 0; j < cols; j++)
 		{
 			arr[i][j] = set;
 		}
